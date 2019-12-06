@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".resumen">
+
+    <TextView
+        android:id="@+id/edEducacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/edSolicitado"
+        app:layout_constraintTop_toBottomOf="@+id/edSolicitado" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="241dp"
+        android:layout_height="193dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/data" />
+
+    <TextView
+        android:id="@+id/txtSolicitado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="19dp"
+        android:text="@string/txtSolicitado"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtConectado" />
+
+    <TextView
+        android:id="@+id/txtConectado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="81dp"
+        android:text="@string/txtConectado"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/edConectado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtConectado"
+        app:layout_constraintEnd_toEndOf="@+id/edSolicitado" />
+
+    <TextView
+        android:id="@+id/edSolicitado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/txtConectado"
+        app:layout_constraintTop_toBottomOf="@+id/edConectado" />
+
+    <TextView
+        android:id="@+id/txtEducacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/txtEducacion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSolicitado" />
+
+    <TextView
+        android:id="@+id/txtDep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/txtDep"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEducacion" />
+
+    <TextView
+        android:id="@+id/chR1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:text="TextView"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtDep"
+        app:layout_constraintStart_toEndOf="@+id/txtDep" />
+
+    <TextView
+        android:id="@+id/chR2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:text="TextView"
+        app:layout_constraintBaseline_toBaselineOf="@+id/chR3"
+        app:layout_constraintEnd_toStartOf="@+id/chR3" />
+
+    <TextView
+        android:id="@+id/chR3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginRight="38dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edEducacion" />
+
+    <TextView
+        android:id="@+id/txtIdi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:text="@string/txtIdi"
+        app:layout_constraintBaseline_toBaselineOf="@+id/rd1"
+        app:layout_constraintEnd_toStartOf="@+id/rd1" />
+
+    <TextView
+        android:id="@+id/rd1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:text="TextView"
+        app:layout_constraintBaseline_toBaselineOf="@+id/rd2"
+        app:layout_constraintEnd_toStartOf="@+id/rd2" />
+
+    <TextView
+        android:id="@+id/rd2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/chR2"
+        app:layout_constraintTop_toBottomOf="@+id/chR2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
